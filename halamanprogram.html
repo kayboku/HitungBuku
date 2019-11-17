@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+
+	<!--title-->
+	<title> HALAMAN BUKU PEMROGRAMAN</title>
+	<!--title-->
+
+	<link rel="stylesheet" type="text/css" href="pemrograman.css">
+	<script type="text/javascript" src="jquery-3.2.1.min.js" ></script>
+	<meta charset="UTF-8">
+</head>
+<body>
+
+	</div><div class="alas">
+		<a class="home" href="halamanutama.html">HOME</a>
+		<div class="bla">
+			<a class="judul">APLIKASI  </a>
+			<a class="judul1"> HITUNG TOTAL HARGA PEMBELIAN BUKU</a>
+		</div>
+	</div>
+
+	<div id="wrapper">
+		<div id="header">
+
+
+	<script>
+
+
+		function hitungPesan(){
+			var nota = document.form2;
+			var hargaHtml = 160000 * eval(nota.uHtml.value);
+			var hargaCss = 120000 * eval(nota.uCss.value);
+			var hargajava  = 100000 * eval(nota.uJava.value);
+			var hargaJquery = 150000 * eval(nota.uJquery.value);
+			
+
+			var jumlahTotal = hargaHtml + hargaCss + hargajava + hargaJquery;
+
+			if (jumlahTotal > 300000){
+				nota.Total.value = jumlahTotal;
+				nota.Diskon.value = 50000;
+				nota.Bayar.value = jumlahTotal - eval(nota.Diskon.value);
+			} else {
+				nota.Total.value = jumlahTotal;
+				nota.Diskon.value = 0;
+				nota.Bayar.value = jumlahTotal - eval(nota.Diskon.value);
+			}
+		}
+
+		function resetForm(){
+			document.form2.reset();
+		}
+	</script>
+
+
+	
+	<div id="tabel1">
+		<form name="form2">
+			<table class="tablesatu">
+				<tr id="list">
+					<th>No.</th>
+					<th>Daftar Buku</th>
+					<th>Jumlah</th>
+					<th>Jumlah Buku yang Dibeli</th>
+				</tr>
+
+
+				<tr>
+					<td id="nomor">1.</td>
+					<td class="makanan">Belajar HTML untuk Pemula</td>
+					<td id="penjumlahan"><input type="text" class="menu" name="html" value="Rp.120000" size="10"/></td>
+					<td id="buku"><input type="text" name="uHtml" value="0" onChange="hitungPesan()"/></td>
+
+				</tr>
+
+				<tr>
+					<td>2.</td>
+					<td class="makanan">24 Jam Mahir CSS</td>
+					<td><input type="text" name="css" class="menu" value="Rp.100000" size="10"/></td>
+					<td><input type="text" name="uCss" value="0" onChange="hitungPesan()"/></td>
+
+				</tr>
+
+				<tr>
+					<td>3.</td>
+					<td class="makanan">Panduan Javascript</td>
+					<td><input type="text" class="menu"  name="java" value="Rp.150000" size="10"/></td>
+					<td><input type="text" name="uJava" value="0" onChange="hitungPesan()"/></td>
+				</tr>
+
+				<tr>
+					<td>4.</td>
+					<td class="makanan">Belajar Jquery</td>
+					<td><input type="text" name="jquery" class="menu"  value="Rp.150000" size="10"/></td>
+					<td><input type="text" name="uJquery" value="0" onChange="hitungPesan()"/></td>
+				</tr>
+
+				
+				<tr>
+					<td colspan="3">Jumlah Total</td>
+					<td><input type="text" name="Total"/></td>
+				</tr>
+
+				<tr>
+					<td colspan="3">Diskon</td>
+					<td><input type="text" name="Diskon" /></td>
+				</tr>
+
+				<tr>
+					<td colspan="3">Jumlah Dibayar</td>
+					<td><input type="text" name="Bayar"/></td>
+				</tr>
+			</table>
+			</form>
+		</div>
+		<input type="button" class="reset" value="RESET" onClick="resetForm()" />
+		<a class="ket">Keterangan : <br> Diskon Rp.40.000 untuk pembelian diatas Rp. 250.000</a>
+</div>
+	</div>
+
+	</body>
+	</html>

@@ -1,0 +1,230 @@
+*{
+	font-size: 12px;
+	font-family: sans-serif;
+}
+
+
+h1{
+	font-size: 36px;
+	color: red;
+	padding: 30px;
+	margin-top: -4px;
+	margin-bottom: 60px;
+}
+
+#wrapper{
+	background-color:rgba(255,255,255,0.5);
+	width: 100%;
+}
+#header{
+	background: transparent;
+}
+
+body{
+	background-image: url("background.jpg");
+	width: 99%;
+}
+
+
+
+.tabelpotion{
+	padding-bottom: 50px;
+}
+
+.pemrogramann,th{
+	background-color: orangered;
+	padding-left: 3%;
+	padding-right: 3%;
+	padding-top: 1px;
+	padding-bottom: 1%;
+}
+
+.pemrogramann,td{
+	background-color: white;
+}
+
+
+
+#fdw-tabel-buku {
+	margin:0 auto;
+	text-align: center;
+	width: 1038px; /* total computed width */
+}
+
+
+#fdw-tabel-buku .plan {
+	font: 13px 'Lucida Sans', 'trebuchet MS', Arial, Helvetica;     
+	background: #fff;      
+	border: 1px solid #ddd;
+	padding: 20px;
+	width: 220px;
+	float: left;
+	display: inline; /* IE6 double margin fix */
+	position: relative;
+	margin: 0 35px;
+	-moz-box-shadow: 0 2px 2px -1px rgba(0,0,0,.3);
+	-webkit-box-shadow: 0 2px 2px -1px rgba(0,0,0,.3);
+	box-shadow: 0 2px 2px -1px rgba(0,0,0,.3);		
+}
+
+#fdw-tabel-buku .plan:after {
+	z-index: -1; 
+	position: absolute; 
+	content: "";
+	bottom: 10px;
+	right: 4px;
+	width: 80%; 
+	top: 80%; 
+	-webkit-box-shadow: 0 12px 5px rgba(0, 0, 0, .3);   
+	-moz-box-shadow: 0 12px 5px rgba(0, 0, 0, .3);
+	box-shadow: 0 12px 5px rgba(0, 0, 0, .3);
+	-webkit-transform: rotate(3deg);    
+	-moz-transform: rotate(3deg);   
+	-o-transform: rotate(3deg);
+	-ms-transform: rotate(3deg);
+	transform: rotate(3deg);	
+}	
+
+#fdw-tabel-buku .buku{
+	font-size: 25px ;
+	color: red;
+	text-align: center;
+
+}
+
+
+#fdw-tabel-buku .header1 {
+	position: relative;
+	font-size: 30px;
+	color: white;
+	font-weight: normal;
+	text-transform: uppercase;
+	padding: 35px;
+	margin: -20px -20px 20px -20px;
+	border-bottom: 8px solid;
+	background-color: #03A9F4;;
+
+}
+
+#fdw-tabel-buku .header2 {
+	position: relative;
+	font-size: 30px;
+	color: white;
+	font-weight: normal;
+	text-transform: uppercase;
+	padding: 35px;
+	margin: -20px -20px 20px -20px;
+	border-bottom: 8px solid;
+	background-color: #9CCC65;
+
+}
+
+#fdw-tabel-buku .header3 {
+	position: relative;
+	font-size: 30px;
+	color: white;
+	font-weight: normal;
+	text-transform: uppercase;
+	padding: 35px;
+	margin: -20px -20px 20px -20px;
+	border-bottom: 8px solid;
+	background-color: #FFCA28;
+
+}
+
+
+#fdw-tabel-buku .popular-plan .header {
+	margin-top: -40px;
+	padding-top: 60px;		
+}
+
+#fdw-tabel-buku .plan1 .header{
+	border-bottom-color: #B3E03F;
+}
+
+
+#fdw-tabel-buku .plan2 .header{
+	border-bottom-color: #3AD5A0;
+}
+
+#fdw-tabel-buku .plan3 .header{
+	border-bottom-color: #45D0DA;
+}			
+
+#fdw-tabel-buku .harga{
+	font-size: 45px;
+}
+
+#fdw-tabel-buku .bulanan{
+	font-size: 13ppx;
+	margin-bottom: 20px;
+	text-transform: uppercase;
+	color: #999;
+}
+
+#fdw-tabel-buku ul {
+	margin: 20px 0;
+	padding: 0;
+	list-style: none;
+}
+
+#fdw-tabel-buku li {
+	padding: 10px 0;
+}
+
+#fdw-tabel-buku .daftar {
+	position: relative;
+	padding: 10px 20px;
+	color: #fff;
+	font: bold 14px Arial, Helvetica;
+	text-transform: uppercase;
+	text-decoration: none;
+	display: inline-block;       
+	background-color: #72ce3f;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;     
+	text-shadow: 0 -1px 0 rgba(0,0,0,.15);
+	opacity: .9;       
+}
+
+#fdw-tabel-buku .daftar:hover {
+	opacity: 1;       
+}
+
+#fdw-tabel-buku .daftar:active {
+	-moz-box-shadow: 0 2px 2px rgba(0,0,0,.3) inset;
+	-webkit-box-shadow: 0 2px 2px rgba(0,0,0,.3) inset;
+	box-shadow: 0 2px 2px rgba(0,0,0,.3) inset;       
+}			
+
+#fdw-tabel-buku .plan1 .daftar{
+	background: #03A9F4;
+}
+
+
+#fdw-tabel-buku .plan2 .daftar{
+	background: #9CCC65;
+}
+
+#fdw-tabel-buku .plan3 .daftar{
+	background: #FFCA28;
+}	
+
+
+#fdw-tabel-buku .plan1 .daftar:hover{
+	transition-duration: 0.4s;
+	background: #01579B;
+}
+
+#fdw-tabel-buku .plan2 .daftar:hover{
+	transition-duration: 0.4s;
+	background: #33691E;
+}
+
+
+#fdw-tabel-buku .plan3 .daftar:hover{
+	transition-duration: 0.4s;
+	background: #FF6F00;
+}	
+
